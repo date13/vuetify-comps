@@ -24,11 +24,10 @@ local.properties
 
 # CDT-specific
 .cproject
-
+node_modules
 # PDT-specific
 .buildpath
-
-
+package-lock.json
 #################
 ## Visual Studio
 #################
