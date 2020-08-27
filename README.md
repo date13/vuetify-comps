@@ -17,3 +17,4 @@ demo https://localhost:8003/test2
 LinkComp can custom link href for user select<br/>
 you could custom link click event, just like open select dialog or customr link address
 demo https://localhost:8003/test2
+![image](https://github.com/date13/vuetify-comps/blob/master/1598514386948.jpg)
