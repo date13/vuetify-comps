@@ -1,6 +1,7 @@
 import 'babel-polyfill' //It is important to include the plugin as early as possible within your main index.js file.
 import Vue from 'vue'
 import vuetify from './plugins/vuetify';
+import './styles/page.less'
 import '@mdi/font/css/materialdesignicons.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import "awesome-notifications/dist/style.css"

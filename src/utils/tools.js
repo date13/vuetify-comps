@@ -1,5 +1,7 @@
 
 import _ from 'lodash';
+import {Events} from "@/utils/events";
+import {EventType} from "@/model/const";
 
 const ENV = process.env;
 class Tools {
@@ -28,8 +30,33 @@ class Tools {
     return ENV.NODE_ENV === 'production';
   }
 }
+class Msg {
 
+  static alert(msg, func = () => {
+  }) {
+    let params = {
+      dialog: true,
+      msg,
+      func
+    };
+    Events.$emit(EventType.alert, params);
+  }
+
+  static confirm(msg, sureFunc = () => {
+  }, cancelFunc = () => {
+  }, persistent) {
+    let params = {
+      dialog: true,
+      msg,
+      sureFunc,
+      cancelFunc,
+      persistent
+    };
+    Events.$emit(EventType.confirm, params);
+  }
+}
 export {
   ENV,
-  Tools
+  Tools,
+  Msg
 }

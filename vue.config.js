@@ -60,15 +60,6 @@ module.exports = {
         threshold: 10240,
         minRatio: 0.8
       }));
-      config.externals = {
-        'vue': 'Vue',
-        'vuex': 'Vuex',
-        'vue-router': 'VueRouter',
-        'axios': 'axios',
-        'vuetify': 'Vuetify',
-        'lodash':'_',
-        'echarts': 'echarts'
-      };
       config.optimization = {
         // runtimeChunk: 'single',
         runtimeChunk: {
